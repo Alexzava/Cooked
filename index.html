@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cooked</title>
+
+	<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="style.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="js/bootstrap-autocomplete.min.js"></script>
+	<script src="js/html2canvas.min.js"></script>
+
+	<script src="js/app.js"></script>
+</head>
+<body class="container">
+	<nav class="navigation">
+		
+	</nav>
+
+	<header class="header">
+		<h1 class="title">
+			Cooked
+		</h1>
+	</header>
+
+	<div class="recepie" id="recepie">
+		<div class="form-floating">
+			<input id="recepieTitleInput" class="form-control" type="text" placeholder="Titolo della ricetta">
+			<label for="recepieTitleInput">Nome della ricetta</label>
+		</div>
+
+		<div class="form-floating mb-4">
+			<input id="portionsInput" class="form-control" type="number" min="1" max="30" value="4" placeholder="Porzioni">
+			<label for="portionsInput">Porzioni</label>
+		</div>
+
+		<!-- Ingredients -->
+		<div id="ingredients"></div>
+
+		<div class="col-12 text-center mt-3 mb-2">
+			<button id="btn-recepie-add" type="button" class="circle-icon-button">
+				<i class="iconoir-plus-circle-solid"></i>
+			</button>
+		</div>
+
+		<div class="col-12 btn btn-warning">
+			<button id="btn-download-recepie" type="button" class="circle-icon-button">
+				<i class="iconoir-download-circle-solid"></i>
+				Salva la ricetta
+			</button>
+		</div>
+
+	</div>
+
+	<footer class="footer">
+		<i class="iconoir-internet"></i>
+		<a href="https://alexzava.com" target="_blank">
+			Alex Zava
+		</a>
+	</footer>
+</body>
+</html>
